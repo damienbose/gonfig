@@ -1,1 +1,237 @@
-/Users/damienbose/Library/Application Support/Code/User/settings.json
+{
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-shell-escape",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": [
+        "%DOCFILE%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdfLaTeX",
+      "tools": [
+        "pdflatex"
+      ]
+    },
+    {
+      "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
+      "tools": [
+        "pdflatex",
+        "bibtex",
+        "pdflatex",
+        "pdflatex"
+      ]
+    },
+    {
+      "name": "latexmk 🔃",
+      "tools": [
+        "latexmk"
+      ]
+    },
+    {
+      "name": "xelatex",
+      "tools": [
+        "xelatex"
+      ]
+    },
+    {
+      "name": "xelatex ➞ bibtex ➞ xelatex`×2",
+      "tools": [
+        "xelatex",
+        "bibtex",
+        "xelatex",
+        "xelatex"
+      ]
+    }
+  ],
+  "C_Cpp.updateChannel": "Insiders",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "cmake.configureOnOpen": true,
+  "editor.accessibilitySupport": "off",
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "first",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "python": true,
+    "yaml": false,
+    "latex": false
+  },
+  "gitlens.graph.minimap.additionalTypes": [
+    "stashes"
+  ],
+  "gitlens.graph.minimap.enabled": false,
+  "hexeditor.columnWidth": 4,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
+  "hexeditor.showDecodedText": false,
+  "java.imports.gradle.wrapper.checksums": [
+    {
+      "allowed": true,
+      "sha256": "34dfac25b0eb5b075f489dde2eb9d2c3224dba3d830d064cc5689a9080c2eddf"
+    }
+  ],
+  "notebook.output.scrolling": true,
+  "notebook.output.textLineLimit": 100,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.explorerKind": "integrated",
+  "terminal.external.osxExec": "Terminal.app",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.inheritEnv": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.sideBar.location": "right",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "workbench.colorTheme": "Hyper Term Black",
+  "gitProjectManager.baseProjectsFolders": [
+    "/Users/damienbose/projects"
+  ],
+  "window.newWindowDimensions": "inherit",
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook",
+    "*.gif": "gifPlayer.player"
+  },
+  "cSpell.userWords": [
+    "cumsum",
+    "Haraldsson",
+    "metaheuristic",
+    "Nordisk",
+    "Optimisation",
+    "overfitting",
+    "Replicability",
+    "softmax",
+    "unscalable"
+  ],
+  "cmake.showOptionsMovedNotification": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[latex]": {
+    "editor.wordWrap": "on",
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.formatOnSave": true
+  },
+  "explorer.confirmDragAndDrop": false,
+  "cSpell.language": "en-GB",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.ignoreLegacyWarning": true,
+  "C_Cpp.default.compilerPath": "/usr/local/bin/g++-13",
+  "explorer.confirmPasteNative": false,
+  "gitProjectManager.searchInsideProjects": false,
+  "gitProjectManager.storeRepositoriesBetweenSessions": true,
+  "gitProjectManager.checkRemoteOrigin": false,
+  "git.suggestSmartCommit": false,
+  "jupyter.widgetScriptSources": [
+    "jsdelivr.com",
+    "unpkg.com"
+  ],
+  "git.ignoreRebaseWarning": true,
+  "remote.autoForwardPortsSource": "hybrid",
+  "jupyter.askForKernelRestart": false,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+    "asvetliakov.vscode-neovim": 1
+  },
+  "vscode-neovim.compositeKeys": {
+    "jj": {
+      "command": "vscode-neovim.escape",
+    },
+  },
+  "vscode-neovim.highlightGroups.highlights": {
+    "IncSearch": {
+      "backgroundColor": "theme.editor.findMatchBackground"
+    },
+    "CurSearch": {
+      "backgroundColor": "theme.editor.findMatchBackground"
+    },
+    "Search": {
+      "backgroundColor": "theme.editor.findMatchHighlightBackground"
+    },
+    "Substitute": {
+      "backgroundColor": "theme.editor.foreground",
+      "color": "theme.editor.background"
+    }
+  },
+  "terminal.integrated.macOptionIsMeta": true,
+  "editor.fontFamily": "Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace",
+  "workbench.colorTheme": "Hyper Term Black",
+  "editor.cursorStyle": "block",
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "none",
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "editor.suggest.showStatusBar": true,
+  "[lua]": {
+    "editor.quickSuggestions": {
+      "comments": "inline",
+      "other": "on",
+      "strings": "on"
+    },
+    "editor.semanticHighlighting.enabled": true
+  },
+  "editor.formatOnSave": true,
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+}
